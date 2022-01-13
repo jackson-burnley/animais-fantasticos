@@ -48,7 +48,7 @@ body {
 
 .menu ul li a {
   display: block;
-  padding: 10px;
+  padding: 16px 10px;
   margin-right: 10px;
   color: #222;
   text-decoration: none;
@@ -107,6 +107,7 @@ body {
   height: 360px;
   overflow-y: scroll;
   grid-column: 2;
+  cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -219,5 +220,26 @@ footer p {
   }
   footer {
     margin-bottom: 0px;
+  }
+}
+
+/*JS Part */
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

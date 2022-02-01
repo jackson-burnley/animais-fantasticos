@@ -1,12 +1,10 @@
-import * as teste from './teste.js';
-
-console.log(teste.senha);
-
 export default function initAccordion() {
-  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
-  const activeClass = 'ativo';
-  
-  if(accordionList.length) {
+  const accordionList = document.querySelectorAll(
+    '[data-anime="accordion"] dt'
+  );
+  const activeClass = "ativo";
+
+  if (accordionList.length) {
     accordionList[0].classList.add(activeClass);
     accordionList[0].nextElementSibling.classList.add(activeClass);
 
@@ -16,7 +14,7 @@ export default function initAccordion() {
     }
 
     accordionList.forEach((item) => {
-      item.addEventListener('click', activeAccordion);
+      item.addEventListener("click", activeAccordion);
     });
   }
 }

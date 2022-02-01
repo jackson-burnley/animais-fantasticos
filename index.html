@@ -12,7 +12,7 @@
 <body>
 
   <!--Navegação do site-->
-  <nav class="menu js-menu">
+  <nav class="menu js-menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -23,9 +23,9 @@
   <!--Fim navegação-->
 
   <!--Seção dos animais-->
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista js-tabmenu" data-tab="menu">
       <li><img src="img/imagem1.jpg" alt=""></li>
       <li><img src="img/imagem2.jpg" alt=""></li>
       <li><img src="img/imagem3.jpg" alt=""></li>
@@ -34,21 +34,21 @@
       <li><img src="img/imagem6.jpg" alt=""></li>
     </ul>
 
-    <div class="animais-descricao js-tabcontent">
-      <section>
+    <div class="animais-descricao js-tabcontent" data-tab="content">
+      <section data-anime="show-right">
         <h2>Raposa</h2>
         <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Esquilo</h2>
         <p>Os esquilos são roedores que têm a cauda longa e peluda. Em cidades de várias partes do mundo, são vistos com mais frequência do que qualquer outro mamífero silvestre ou selvagem. Os esquilos fazem parte da família dos ciurídeos, que também inclui a marmota, o cão-da-pradaria e a tâmia. Mais de 250 animais diferentes integram essa família.</p>
         <p>Os esquilos vivem em todos os continentes, exceto na Antártica e na Oceania. Esquilos arborícolas fazem suas casas nas árvores. Esquilos do solo vivem em buracos sob as pradarias, nos desertos e nos campos.</p>
         <p>São animais pequenos. Os esquilos-pigmeus, da África, são os menores de todos. Eles têm apenas 10 centímetros de comprimento. Os maiores são os esquilos-gigantes, da Ásia. Eles podem ter 90 centímetros de comprimento e chegam a pesar 3 quilos. A maioria dos esquilos tem olhos grandes e pelo curto.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Urso</h2>
         <p>Urso é a denominação utilizada para as espécies pertencentes à família Ursidae, uma das famílias mais estudadas e mais ameaçadas entre os animais carnívoros. Seus membros pertencem à classe Mammalia e à ordem Carnivora.</p>
         <p>A família Ursidae apresenta espécies distribuídas em diversas regiões do planeta, como Europa, Ásia, América do Sul, América do Norte e África, habitando desde regiões de florestas a regiões polares. A seguir descrevemos algumas características desse grupo de animais e algumas de suas espécies.</p>
@@ -56,7 +56,7 @@
         <p>Como os demais animais da classe, apresentam o corpo coberto de pelos. Estes são longos e a sua coloração varia de acordo com cada espécie, podendo ser totalmente brancos, marrons e pretos. Havendo algumas exceções, como o urso-de-óculos e o panda-gigante que apresentam, respectivamente, manchas brancas em torno dos olhos e na região peitoral e um padrão preto e branco.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Lobo</h2>
         <p>O lobo (Canis lupus) é um animal mamífero, pertencente ao filo Chordata, ordem Carnivora e família Canidae, a mesma família do cachorro. O termo lobo é geralmente utilizado para designar a espécie Canis lupus, um lobo que habita o Hemisfério Norte, também conhecido como lobo cinzento.
         </p>
@@ -65,13 +65,13 @@
         </p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Macaco</h2>
         <p>Os seres humanos sempre tiveram fascínio pelos macacos, uma vez que eles são criaturas interessantes e constituem uma fonte de conhecimento e estudo sobre a raça humana. Os macacos são animais inteligentes e sociáveis. São conhecidos por correr e saltar pelas árvores com facilidade. A exemplo dos antropoides (como são chamados os macacos sem rabo) e dos seres humanos, os macacos pertencem ao grupo de mamíferos chamados primatas.</p>
         <p>Os macacos se parecem com os antropoides (chimpanzés, orangotangos e gorilas, entre outros), mas diferem deles em diversos aspectos. Por exemplo, todo macaco tem cauda, mesmo que seja apenas um coto. Os antropoides não têm rabo. Os macacos também têm o tórax mais estreito que os antropoides.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Leão</h2>
         <p>O leão é o segundo maior membro da família dos felinos, à qual pertencem também o gato e o tigre (o tigre é o maior felino). Ele vive em regiões da África e da Índia, e seu rugido é um dos sons mais assustadores que se ouvem nas savanas. O nome científico do leão é Panthera leo.</p>
         <p> leão possui corpo longo, pernas curtas, garras afiadas e cabeça grande. Os leões adultos medem cerca de 2,7 a 3 metros de comprimento, incluindo a cauda. Têm cerca de 1 metro de altura do ombro ao chão e podem pesar entre 170 e 230 quilos. As fêmeas são mais baixas e mais esguias.</p>
@@ -85,9 +85,9 @@
   <!--Fim seção dos animais-->
 
   <!--FAQ-->
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq js-scroll" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista js-accordion" data-anime="accordion">
       <dt>Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, consectetur.</dd>
 
@@ -105,7 +105,7 @@
 
 
   <!--Contato-->
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato js-scroll" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png" alt="">
@@ -126,6 +126,6 @@
   <!--Fim footer-->
 </body>
 
-<script src="script/script.js"></script>
+<script type="module" src="script/script.js"></script>
 
 </html>

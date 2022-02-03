@@ -21,7 +21,6 @@ export default function initModal() {
     botaoAbrir.addEventListener("click", abrirModal);
     botaoFechar.addEventListener("click", fecharModal);
 
-    console.log(botaoAbrir, botaoFechar, containerModal);
     containerModal.addEventListener("click", cliqueFora);
   }
 }

@@ -15,4 +15,3 @@ const horarioAberto =
 if (semanaAberto && horarioAberto) {
   funcionamento.classList.add("aberto");
 }
-console.log(horarioAberto);
